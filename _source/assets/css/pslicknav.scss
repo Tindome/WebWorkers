@@ -1,0 +1,13 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+.slicknav_menu:before {
+float: left;
+height: 40px;
+background: url(../images/logo.png)no-repeat;
+width: 110px;
+margin-left: 7px;
+margin-top: 7px;
+}

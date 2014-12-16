@@ -1,0 +1,95 @@
+<!--start jekyll.includes : pages/contact.html -->
+
+
+
+
+<div class="line5">
+    <div class="container">
+        <div class="row Ama">
+            <div class="col-md-12">
+            <h3>Vous avez une question nous sommes là pour vous aider !</h3>
+            <p>Nous sommes à votre écoute</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 col-xs-12 forma">
+            <form>
+                <input type="text" class="col-md-6 col-xs-12 name" name="name" placeholder="Nom *">
+                <input type="text" class="col-md-6 col-xs-12 Email" name="email" placeholder="Email *">
+                <input type="text" class="col-md-12 col-xs-12 Subject" name="subject" placeholder="Sujet">
+                <textarea class="col-md-12 col-xs-12 Message" placeholder="Message *"></textarea>
+                <div class="cBtn col-xs-12">
+                    <ul>
+                        <li class="clear"><a href="#"><i class="fa fa-times"></i>Effacer le formulaire</a></li>
+                        <li class="send"><a href="#"><i class="fa fa-share"></i>Envoyer le message</a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3 col-xs-12 cont">
+            <ul>
+                <li><i class="fa fa-home"></i>{{site.location}}</li>
+                <li><i class="fa fa-phone"></i>{{site.phone}}, {{site.phone2}}</li>
+                <li><a href="#"><i class="fa fa-envelope"></i>{{site.email_t}}</a></li>
+                <li><i class="fa fa-skype"></i>{{site.owner.skype}}</li>
+                <li><a href="#"><i class="fa fa-twitter"></i>{{site.owner.twitter}}</a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i>{{site.owner.facebook}}</a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i>{{site.owner.dribbble}}</a></li>
+                <li><a href="#"><i class="fa fa-flickr"></i>{{site.owner.flickr}}</a></li>
+                <li><a href="#"><i class="fa fa-youtube-play"></i>{{site.owner.youtube}}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="line6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5056.3367044900015!2d3.1364250406233465!3d50.67969998103065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3290980dd8633%3A0xd1cb0e500143d3c0!2s17+Rue+Condorcet%2C+59290+Wasquehal!5e0!3m2!1sfr!2sfr!4v1418121320760"></iframe>
+</div>
+
+<div class="container">
+    <div class="row ftext">
+        <div class="col-md-12">
+        <a id="features"></a>
+        <h3>Le client est notre priorité numéro 1 !</h3>
+        <p>Le principale interêt de ce genre de site est que la présentation au visiteur se fait d'un trait de haut en bas ce qui projette ainsi l'idée que le ou les produits présentés sont simples, efficaces. </p>
+        </div>
+        {% comment %}
+        <div class="cBtn">
+            <ul style="margin-top: 23px; margin-bottom: 0px; padding-left: 26px;">
+                <li class="dowbload"><a href="#"><i class="fa fa-star"></i>View All Features</a></li>
+                <li class="buy"><a href="#"><i class="fa fa-download"></i>Buy This Template</a></li>
+            </ul>
+        </div>
+        {% endcomment %}
+    </div>
+</div>
+
+
+
+<div class="line7">
+    <div class="container">
+        <div class="row footer">
+            <div class="col-md-12">
+                <h3>Inscrivez vous à notre Newsletter!</h3>
+                <p>Inscrivez vous à notre newsletter pour obtenir les dernières infos, les promos du momennt, les cadeaux et autres joyeusetés gratuites. Soyez toujours au courant !</p>
+                <div class="fr">
+                    <div style="display: inline-block;">
+                        <input class="col-md-6 fEmail" name="Email" placeholder="Entrez Votre Email">
+                        <a href="#" class="subS">Inscrivez-vous !</a>
+                    </div>
+                </div>
+            </div>
+            <div class="soc col-md-12">
+                {%include share.html %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--end jekyll.includes : pages/contact.html -->

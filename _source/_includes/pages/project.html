@@ -1,0 +1,53 @@
+<!--start jekyll.includes : pages/project.html -->
+<div class="line3">
+    <div class="container">
+        <div id="project1"></div>
+        <div class="row Ama">
+            <div class="col-md-12">
+            <span id="projectss"></span>
+            <h3>Nos réalisations</h3>
+            <p>Laissez nous vous présenter celles qui nous tiennent le plus à coeur</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <!-- filter_block -->
+        <div id="options" class="col-md-12" style="text-align: center;">
+            <ul id="filter" class="option-set" data-option-key="filter">
+                <li><a class="current selected" href="#filter" data-filter="*">Tous</a></li>
+                <li><a href="#filter" data-filter=".print" class="">Print</a></li>
+                <li><a href="#filter" data-filter=".design" class="">Design</a></li>
+                <li><a href="#filter" data-filter=".web" class="">Web UI</a></li>
+                <li><a href="#filter" data-filter=".logo" class="">Logos</a></li>
+                <li><a href="#filter" data-filter=".identity" class="">Identitées</a></li>
+            </ul>
+        </div>
+        <!-- //filter_block -->
+
+
+
+        <div class="portfolio_block">
+          <div class="isotope pretty">
+            {% for doc in site.data.projects %}
+            <div class="element col-sm-4 gall branding isotope-item {{doc.groups}} " data-category="transition">
+              <img class="img-responsive PicsGall" src="{{doc.img | prepend: site.baseurl}}" />
+              <div class="view project_descr">
+                <h3><a href="#">{{doc.desc}}</a></h3>
+                <ul>
+                  <li><i class="fa fa-eye"></i>{{doc.eye}}</li>
+                  <li><a class="heart" href="#"><i class="fa-heart-o"></i>{{doc.heart}}</a></li>
+                </ul>
+              </div>
+            </div>
+            {% endfor %}
+        </div>
+      </div>
+
+    </div>
+</div>
+<!--end jekyll.includes : pages/project.html -->
